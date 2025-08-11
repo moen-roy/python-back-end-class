@@ -22,6 +22,7 @@ def write_file(f_name,txt):
 class Human():
 
     species="h.sapien"
+    genus = "homo"
     count= 0
     # the magic level use
     def __init__(self,gender,name):
@@ -48,11 +49,17 @@ class Human():
 
     def print_self(self):
         print("----------------------")
-        print("name",self.name)
+        print("name",self._name)
         print("gender",self.gender)
         print("ribs",self.ribs)
         print("curse",self.curse)
         print("---------------------")
+                        
+    @classmethod
+    def general_info(cls):
+        print("Species:",cls.species)
+        print("Genus:",cls.genus)
+        print ("human count", cls.count)
 
 
 # adam=Human(name="adam",gender="Male") #object from a class
@@ -66,3 +73,9 @@ print(adam.get_name)
 # @property
 print (adam.species)
 print(f"The number of humans are {Human.count}")
+
+
+
+adam=Human(name="adam",gender="Male")
+eve= Human(name="eve", gender= "Female")
+adam.general_info()
