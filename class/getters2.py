@@ -2,7 +2,7 @@ class Rect():
     def __init__(self,length,width):
         if not isinstance(length,(int,float)):
             raise TypeError (f"Expected a number, got {type(length)}")
-        if not isinstance(length,(int,float)):
+        if not isinstance(width,(int,float)):
             raise TypeError (f"Expected a number, got {type(width)}")
         
         self._length=length
