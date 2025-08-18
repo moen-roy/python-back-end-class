@@ -1,1 +1,1 @@
-drop table if exists student,parent;
+drop table if exists mock_data
