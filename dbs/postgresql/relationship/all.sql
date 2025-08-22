@@ -1,0 +1,18 @@
+-- CREATE TABLE IF NOT EXISTS hostel(
+--     id SERIAL PRIMARY KEY,
+--     student_id INTEGER NOT NULL REFERENCES student(id),
+--     name TEXT,
+--     room TEXT
+-- )
+-- CREATE TABLE IF NOT EXISTS sports(
+--     id SERIAL PRIMARY KEY,
+--     student_id INTEGER NOT NULL REFERENCES student(id),
+--     name TEXT,
+--     room TEXT
+-- )
+-- CREATE TABLE  IF NOT EXISTS subjects(
+--     id BIGSERIAL PRIMARY KEY,
+--     student_id INTEGER REFERENCES student (id),
+--     subject_id 
+
+-- )
